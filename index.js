@@ -4,7 +4,7 @@ const port = 5000;
 var path = require("path");
 
 app.get("/", (req, res) => {
-  res.sendFile(path.resolve("../client/index.html"));
+  res.json({ name: "value" });
 });
 
 app.get("/deck", (req, res) => {
